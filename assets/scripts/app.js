@@ -18,7 +18,7 @@ function createAndWriteLog(operator, resultBefore, calcNumberUsed) {
 function add() {
 	const userEntry = getUserInputNum();
 	const initialResult = currentResult;
-	currentResult = currentResult + userEntry;
+	currentResult += userEntry;
 	createAndWriteLog('+', initialResult, userEntry);
 }
 
@@ -26,7 +26,7 @@ function add() {
 function substract() {
 	const userEntry = getUserInputNum();
 	const initialResult = currentResult;
-	currentResult = currentResult - userEntry;
+	currentResult -= userEntry;
 	createAndWriteLog('-', initialResult, userEntry);
 }
 
@@ -34,14 +34,14 @@ function substract() {
 function multiply() {
 	const userEntry = getUserInputNum();
 	const initialResult = currentResult;
-	currentResult = currentResult * userEntry;
+	currentResult *= userEntry;
 	createAndWriteLog('*', initialResult, userEntry);
 }
 //Divide function
 function divide() {
 	const userEntry = getUserInputNum();
 	const initialResult = currentResult;
-	currentResult = currentResult / userEntry;
+	currentResult /= userEntry;
 	createAndWriteLog('/', initialResult, userEntry);
 }
 //Buttons clicker
